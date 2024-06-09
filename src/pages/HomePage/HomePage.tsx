@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
+
+import { BsArrowsExpand } from "react-icons/bs";
 import "./HomePage.css";
 import UfpeImg from "../../assets/ufpe.png";
 import DotnetSvg from "../../assets/net_svg.svg";
@@ -22,13 +24,21 @@ const HomePage: React.FC = () => {
   }, []);
 
   const spanRef = useRef(null);
+  const spanWhiteRef = useRef(null);
+
   const [spanPosition, setSpanPosition] = useState({ top: 0, left: 0 });
+  const [spanWhitePosition, setSpanWhitePosition] = useState({ top: 0, left: 0 });
 
   useEffect(() => {
     const handleResize = () => {
       if (spanRef.current) {
         const rect = spanRef.current.getBoundingClientRect();
         setSpanPosition({ top: rect.bottom, left: rect.left });
+      }
+
+      if (spanWhiteRef.current) {
+        const rect = spanWhiteRef.current.getBoundingClientRect();
+        setSpanWhitePosition({ top: rect.bottom, left: rect.left });
       }
     };
 
@@ -44,7 +54,7 @@ const HomePage: React.FC = () => {
     <>
       <Navbar />
       <div className="home-page bg-secondary">
-        <div className="trapezoid">
+        <div className="trapezoid-primary">
           <h3 className="title-home text-center">
             I am a web developer passionate about{" "}
             <span className="text-color">
@@ -70,8 +80,21 @@ const HomePage: React.FC = () => {
             <img src={UfpeImg} height="60px" alt="UFPE" className="ufpe-img" />
           </div>
         </div>
-        <div className="bg-secondary vh-100">
-          <h3 className="title-home text-center text-light">Technologies I've been working.</h3>
+        <div className="trapezoid-secondary bg-secondary  ">
+          <h3 className="title-home text-center text-light">
+            Technologies I've been workin
+            <span id="position-hypen-white" ref={spanWhiteRef}>
+              g
+            </span>
+            .
+          </h3>
+          <div
+            className="hyphen-white"
+            style={{
+              position: "absolute",
+              top: `${spanWhitePosition.top + 5}px`,
+              left: `${spanWhitePosition.left}px`,
+            }}></div>
           <div className="d-flex">
             <div id="hex-1" className="hex d-flex">
               <div
@@ -143,6 +166,12 @@ const HomePage: React.FC = () => {
                 }}></div>
             </div>
           </div>
+          {/* <div className="expansion d-flex justify-content-center align-items-center">
+            <BsArrowsExpand size={"2em"} />
+          </div> */}
+        </div>
+        <div className="bg-primary">
+          <h1>Oiiii</h1>
         </div>
 
         {showFooter && <Footer />}

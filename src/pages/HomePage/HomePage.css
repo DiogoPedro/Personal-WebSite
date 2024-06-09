@@ -2,6 +2,31 @@
   padding: 20px;
 }
 
+.expansion {
+  cursor: pointer;
+  width: 3.2em;
+  height: 3.2em;
+  border-radius: 100%;
+  background-color: white;
+  position: relative;
+  top: -15em;
+  left: 1em;
+
+  @media screen and (max-width: 588px) {
+    top: 1em;
+    left: 0.5em;
+  }
+
+  @media screen and (min-width: 589px) and (max-width: 1182px) {
+    top: -11em;
+    left: 2em;
+  }
+}
+
+.expansion:hover {
+  background-color: rgb(212, 212, 212);
+}
+
 .home-page {
   height: calc(100vh - 50px);
 }
@@ -35,7 +60,7 @@
 
 .ufpe-img {
   @media screen and (max-width: 588px) {
-    margin-top: 25px;
+    margin-top: 0em;
     margin-right: 20px;
   }
 
@@ -44,11 +69,6 @@
 }
 
 #hex-1 {
-  @media screen and (max-width: 588px) {
-    top: 12px;
-    left: 30px;
-  }
-
   width: 4.8em;
   height: 8.3em;
   transform: rotate(23deg);
@@ -56,6 +76,16 @@
   position: relative;
   top: 0.3em;
   left: -5em;
+
+  @media screen and (max-width: 588px) {
+    top: 12px;
+    left: 30px;
+  }
+
+  @media screen and (min-width: 589px) and (max-width: 1182px) {
+    top: 0em;
+    left: -4.4em;
+  }
 }
 
 #hex-background-1 {
@@ -84,24 +114,28 @@
 #hex-background-2 {
   position: relative;
   margin: 1em auto;
-  background-color: aqua;
   width: 6.6em;
   height: 6.6em;
   z-index: 1;
 }
 
 #hex-3 {
-  @media screen and (max-width: 588px) {
-    top: 3px;
-    left: 7px;
-  }
-
   width: 5em;
   height: 8em;
   position: relative;
   background-color: #512cd4;
   top: -7.5em;
   left: 11em;
+
+  @media screen and (max-width: 588px) {
+    top: 1em;
+    left: 0em;
+  }
+
+  @media screen and (min-width: 589px) and (max-width: 1182px) {
+    top: -5.3em;
+    left: 6.4em;
+  }
 }
 
 #hex-background-3 {
@@ -113,11 +147,6 @@
 }
 
 #hex-4 {
-  @media screen and (max-width: 588px) {
-    top: 4em;
-    left: 7px;
-  }
-
   width: 4.6em;
   height: 7.5em;
   transform: rotate(20deg);
@@ -125,6 +154,11 @@
   background-color: #512cd4;
   top: 4.3em;
   left: -3em;
+
+  @media screen and (max-width: 588px) {
+    top: 4em;
+    left: 7px;
+  }
 }
 
 #hex-background-4 {
@@ -145,7 +179,12 @@
   top: -6em;
 
   @media screen and (max-width: 588px) {
-    top: 3em;
+    top: 1.4em;
+  }
+
+  @media screen and (min-width: 589px) and (max-width: 1182px) {
+    top: -2.3em;
+    left: -1.5em;
   }
 }
 
@@ -168,8 +207,13 @@
   left: -11em;
 
   @media screen and (max-width: 588px) {
-    top: 23px;
+    top: 19px;
     left: 7px;
+  }
+
+  @media screen and (min-width: 589px) and (max-width: 1182px) {
+    top: -5.5em;
+    left: -1.5em;
   }
 }
 
@@ -192,8 +236,13 @@
   left: 12em;
 
   @media screen and (max-width: 588px) {
-    top: 23px;
-    left: 7px;
+    top: 1em;
+    left: 0.5em;
+  }
+
+  @media screen and (min-width: 589px) and (max-width: 1182px) {
+    top: -7em;
+    left: 5em;
   }
 }
 
