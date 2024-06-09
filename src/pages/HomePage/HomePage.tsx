@@ -73,7 +73,7 @@ const HomePage: React.FC = () => {
         <div className="bg-secondary vh-100">
           <h3 className="title-home text-center text-light">Technologies I've been working.</h3>
           <div className="d-flex">
-            <div id="hex-1" className="hex d-flex ">
+            <div id="hex-1" className="hex d-flex">
               <div
                 id="hex-background-1"
                 style={{
@@ -82,18 +82,66 @@ const HomePage: React.FC = () => {
                   backgroundSize: "cover",
                 }}></div>
             </div>
-            <div id="hex-2" className="hex"></div>
+            <div id="hex-2" className="hex d-flex">
+              <div
+                id="hex-background-2"
+                style={{
+                  backgroundImage: `url(${DotnetSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}></div>
+            </div>
           </div>
           <div className="d-flex">
-            <div id="hex-3" className="hex"></div>
-            <div id="hex-4" className="hex"></div>
+            <div id="hex-3" className="hex d-flex">
+              <div
+                id="hex-background-3"
+                style={{
+                  backgroundImage: `url(${DotnetSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}></div>
+            </div>
+            <div id="hex-4" className="hex d-flex">
+              <div
+                id="hex-background-4"
+                style={{
+                  backgroundImage: `url(${DotnetSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}></div>
+            </div>
           </div>
           <div className="d-flex">
-            <div id="hex-5" className="hex"></div>
+            <div id="hex-5" className="hex d-flex">
+              <div
+                id="hex-background-5"
+                style={{
+                  backgroundImage: `url(${DotnetSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}></div>
+            </div>
           </div>
           <div className="d-flex">
-            <div id="hex-6" className="hex"></div>
-            <div id="hex-7" className="hex"></div>
+            <div id="hex-6" className="hex d-flex">
+              <div
+                id="hex-background-6"
+                style={{
+                  backgroundImage: `url(${DotnetSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}></div>
+            </div>
+            <div id="hex-7" className="hex d-flex">
+              <div
+                id="hex-background-7"
+                style={{
+                  backgroundImage: `url(${DotnetSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}></div>
+            </div>
           </div>
         </div>
 
