@@ -3,8 +3,10 @@ import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Features from "../../components/HomePage/Features";
 import Presentation from "../../components/HomePage/Presentation";
+import Works from "../../components/HomePage/CarouseWorks";
 
 import "./HomePage.css";
+import Publication from "../../components/HomePage/Publication";
 
 const HomePage: React.FC = () => {
   const [showFooter, setShowFooter] = useState(false);
@@ -28,9 +30,8 @@ const HomePage: React.FC = () => {
       <div className="home-page bg-secondary">
         <Presentation />
         <Features />
-        <div className="bg-primary">
-          <h1>Oiiii</h1>
-        </div>
+        <Works />
+        <Publication />
 
         {showFooter && <Footer />}
       </div>
