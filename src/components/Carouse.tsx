@@ -1,32 +1,38 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import imgFake from "../assets/img-fake.svg";
-import netSvg from "../assets/net_svg.svg";
+import Image from "react-bootstrap/Image";
 import "bootstrap/dist/css/bootstrap.min.css";
+import imgUfpe from "../assets/ufpe.png";
 
 const CarouseComponents: React.FC = () => {
   return (
     <>
-      <Carousel>
+      <Carousel wrap={true} pause="hover">
         <Carousel.Item>
-          <img width={500} height={500} alt="500x500" src={netSvg} />
+          <div className="d-flex justify-content-center align-items-center">
+            <Image src={imgUfpe} width={200} height={350} alt="350x350" />
+          </div>
           <Carousel.Caption>
             <h3>First slide label</h3>
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={500} height={500} alt="500x500" src={netSvg} />
+          <div className="d-flex justify-content-center align-items-center">
+            <Image src={imgUfpe} width={200} height={350} alt="350x350" />
+          </div>
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
-          <img width={500} height={500} alt="500x500" src={netSvg} />
+          <div className="d-flex justify-content-center align-items-center">
+            <Image src={imgUfpe} width={200} height={350} alt="350x350" />
+          </div>
           <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
