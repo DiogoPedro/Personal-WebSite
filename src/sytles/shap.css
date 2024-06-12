@@ -1,3 +1,13 @@
+.carousel-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-control-next {
+}
+
 .hyphen {
   width: 15px;
   height: 5px;
@@ -79,7 +89,7 @@
   @media screen and (max-width: 588px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     text-align: left;
-    height: 370px;
+    height: 665px;
   }
 }
 
