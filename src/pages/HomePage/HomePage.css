@@ -1,3 +1,11 @@
+.bg-CarouseWorks {
+  background: linear-gradient(to bottom, #242424 50%, white 50%);
+}
+
+.bg-publication {
+  background: linear-gradient(to bottom, white 50%, #242424 50%);
+}
+
 .carousel-homePage {
   height: 20em;
   width: 25em;

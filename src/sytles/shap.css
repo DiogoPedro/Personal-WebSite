@@ -14,12 +14,10 @@
   animation: blink 1s step-start infinite;
 }
 
-/* #512cd4 */
 .hex {
   position: relative;
   margin: 1em auto;
   border-radius: 1em/0.5em;
-  background: red;
   transition: opacity 0.5s;
 }
 
@@ -71,6 +69,30 @@
   height: 580px;
   background-color: white;
   clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+}
+
+.trapezoid-third {
+  background-color: #242424;
+  height: 700px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
+
+  @media screen and (max-width: 588px) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
+    text-align: left;
+    height: 370px;
+  }
+}
+
+.trapezoid-quaternary {
+  @media screen and (max-width: 588px) {
+    clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
+    text-align: left;
+    height: 370px;
+  }
+
+  height: 365px;
+  background-color: white;
+  clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 }
 
 @keyframes blink {

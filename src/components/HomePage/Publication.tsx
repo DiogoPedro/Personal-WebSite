@@ -22,8 +22,8 @@ const Publication: React.FC = () => {
   }, []);
 
   return (
-    <>
-      <div className="trapezoid-primary">
+    <div className="bg-publication">
+      <div className="trapezoid-quaternary">
         <h3 className="title-home text-center">
           I am a web developer passionate about{" "}
           <span className="text-color">
@@ -49,7 +49,7 @@ const Publication: React.FC = () => {
           <img src={UfpeImg} height="60px" alt="UFPE" className="ufpe-img" />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
