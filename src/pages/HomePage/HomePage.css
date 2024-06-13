@@ -7,10 +7,15 @@
   background: linear-gradient(to bottom, #3f0b6e 50%, #242424 50%);
 }
 
-.card-publication {
-  width: "15em !important";
-  margin-top: "2em !important";
-  background-color: red;
+.card-size {
+  margin-top: 15px;
+  width: 21em;
+  max-width: 350px;
+  min-width: 250px;
+
+  @media screen and (max-width: 676px) {
+    max-width: 250px;
+  }
 }
 
 .carousel-homePage {

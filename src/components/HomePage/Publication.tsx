@@ -39,43 +39,35 @@ const Publication: React.FC = () => {
             Publications created by me.
           </h3>
           <div>
-            <div className="row ">
+            <div className="row">
               <div className="col-1"></div>
-              <div className="col-9">
-                <div className="card-publication">
-                  <p className="card-publication">dsadsa</p>
-                  <Card>
-                    <Card.Img
-                      variant="bottom"
-                      src={UfpeImg}
-                      style={{
-                        width: "100%",
-                        height: "180px",
-                        objectFit: "contain",
-                        margin: "auto",
-                      }}
-                    />{" "}
-                    <Card.Body>
-                      <Card.Text>
-                        Some quick example text to build on the card title and
-                        make up the bulk of the card's content.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </div>
+              <div className="col-9 card-size">
+                <Card>
+                  <Card.Img
+                    variant="bottom"
+                    src={UfpeImg}
+                    style={{
+                      width: "100%",
+                      height: "180px",
+                      objectFit: "contain",
+                      margin: "auto",
+                    }}
+                  />{" "}
+                  <Card.Body>
+                    <Card.Text>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
               </div>
               <div className="col-2"></div>
             </div>
             <div className="row">
               <div className="col-1"></div>
               <div className="col-7"></div>
-              <div
-                className="col-4"
-                style={{ width: "28em", marginTop: "2em" }}
-              >
-                <Card
-                // style={{ width: "18em", marginTop: "2em", marginLeft: "3em" }}
-                >
+              <div className="col-4 card-size">
+                <Card>
                   <Card.Img
                     variant="bottom"
                     src={UfpeImg}
@@ -97,13 +89,8 @@ const Publication: React.FC = () => {
             </div>
             <div className="row">
               <div className="col-3"></div>
-              <div
-                className="col-6"
-                style={{ width: "28em", marginTop: "2em" }}
-              >
-                <Card
-                // style={{ width: "18em", marginTop: "2em", marginLeft: "3em" }}
-                >
+              <div className="col-6 card-size">
+                <Card>
                   <Card.Img
                     variant="bottom"
                     src={UfpeImg}
@@ -126,13 +113,8 @@ const Publication: React.FC = () => {
             </div>
             <div className="row">
               <div className="col-6"></div>
-              <div
-                className="col-1"
-                style={{ width: "28em", marginTop: "2em" }}
-              >
-                <Card
-                // style={{ width: "18em", marginTop: "2em", marginLeft: "3em" }}
-                >
+              <div className="col-1 card-size">
+                <Card>
                   <Card.Img
                     variant="bottom"
                     src={UfpeImg}
