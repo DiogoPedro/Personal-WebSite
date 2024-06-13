@@ -97,11 +97,12 @@
   @media screen and (max-width: 588px) {
     clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
     text-align: left;
-    height: 370px;
+    height: 600px;
+    border: none;
   }
 
-  height: 365px;
-  background-color: white;
+  /* height: 755px; */
+  background-color: #3f0b6e;
   clip-path: polygon(0 0, 100% 0, 100% 93%, 0% 100%);
 }
 
