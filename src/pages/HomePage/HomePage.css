@@ -7,6 +7,12 @@
   background: linear-gradient(to bottom, #3f0b6e 50%, #242424 50%);
 }
 
+.card-publication {
+  width: "15em !important";
+  margin-top: "2em !important";
+  background-color: red;
+}
+
 .carousel-homePage {
   height: 20em;
   width: 25em;
