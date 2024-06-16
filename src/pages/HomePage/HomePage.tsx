@@ -9,21 +9,6 @@ import "./HomePage.css";
 import Publication from "../../components/HomePage/Publication";
 
 const HomePage: React.FC = () => {
-  const [showFooter, setShowFooter] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolledToBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight;
-      setShowFooter(isScrolledToBottom);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <>
       <Navbar />
@@ -32,8 +17,7 @@ const HomePage: React.FC = () => {
         <Features />
         <Works />
         <Publication />
-
-        {showFooter && <Footer />}
+        <Footer />
       </div>
     </>
   );

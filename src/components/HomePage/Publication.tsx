@@ -1,27 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import UfpeImg from "../../assets/ufpe.png";
-import { Image } from "react-bootstrap";
-import { Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 const Publication: React.FC = () => {
-  const spanRef = React.useRef<HTMLDivElement>(null);
-  const [spanPosition, setSpanPosition] = useState({ top: 0, left: 0 });
+  const [expanded, setExpanded] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      if (spanRef.current) {
-        const rect = spanRef.current.getBoundingClientRect();
-        setSpanPosition({ top: rect.bottom, left: rect.left });
-      }
-    };
+  const toggleExpanded = () => {
+    setExpanded(!expanded);
+  };
 
-    handleResize();
-    window.addEventListener("resize", handleResize);
+  const truncateText = (text: string, maxLength: number) => {
+    if (text.length > maxLength) {
+      return `${text.substring(0, maxLength)}...`;
+    }
+    return text;
+  };
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  const fullText = `CQRS, or Command Query Responsibility Segregation, is an architectural pattern that separates reading (queries) and writing (commands) operations into separate models. This segregation allows for the optimization of each model independently based on its specific requirements.`;
 
   return (
     <>
@@ -34,8 +29,7 @@ const Publication: React.FC = () => {
               paddingTop: "1.3em",
               position: "sticky",
               top: "25vh", // 50% of the viewport height
-            }}
-          >
+            }}>
             Publications created by me.
           </h3>
           <div>
@@ -44,7 +38,6 @@ const Publication: React.FC = () => {
               <div className="col-9 card-size">
                 <Card>
                   <Card.Img
-                    variant="bottom"
                     src={UfpeImg}
                     style={{
                       width: "100%",
@@ -52,11 +45,11 @@ const Publication: React.FC = () => {
                       objectFit: "contain",
                       margin: "auto",
                     }}
-                  />{" "}
-                  <Card.Body>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                  />
+                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                    <Card.Title>CQRS</Card.Title>
+                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                      {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -69,7 +62,6 @@ const Publication: React.FC = () => {
               <div className="col-4 card-size">
                 <Card>
                   <Card.Img
-                    variant="bottom"
                     src={UfpeImg}
                     style={{
                       width: "100%",
@@ -77,11 +69,11 @@ const Publication: React.FC = () => {
                       objectFit: "contain",
                       margin: "auto",
                     }}
-                  />{" "}
-                  <Card.Body>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                  />
+                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                    <Card.Title>CQRS</Card.Title>
+                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                      {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -92,7 +84,6 @@ const Publication: React.FC = () => {
               <div className="col-6 card-size">
                 <Card>
                   <Card.Img
-                    variant="bottom"
                     src={UfpeImg}
                     style={{
                       width: "100%",
@@ -100,11 +91,11 @@ const Publication: React.FC = () => {
                       objectFit: "contain",
                       margin: "auto",
                     }}
-                  />{" "}
-                  <Card.Body>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                  />
+                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                    <Card.Title>CQRS</Card.Title>
+                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                      {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -116,7 +107,6 @@ const Publication: React.FC = () => {
               <div className="col-1 card-size">
                 <Card>
                   <Card.Img
-                    variant="bottom"
                     src={UfpeImg}
                     style={{
                       width: "100%",
@@ -124,11 +114,11 @@ const Publication: React.FC = () => {
                       objectFit: "contain",
                       margin: "auto",
                     }}
-                  />{" "}
-                  <Card.Body>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                  />
+                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                    <Card.Title>CQRS</Card.Title>
+                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                      {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
                 </Card>

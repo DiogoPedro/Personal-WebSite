@@ -7,6 +7,14 @@
   background: linear-gradient(to bottom, #3f0b6e 50%, #242424 50%);
 }
 
+.bg-card-iceWhite {
+  background-color: #e0e0e0;
+}
+
+.bg-footer {
+  background-color: #242424;
+}
+
 .carousel-image {
   width: 100%;
   max-width: 350px;
@@ -21,6 +29,14 @@
   object-fit: contain;
 }
 
+.card-text {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* .card-text.expanded {
+  max-height: 1000px;
+} */
 .no-border {
   border: none !important;
 }
@@ -70,14 +86,17 @@
   background-color: rgb(212, 212, 212);
 }
 
-.home-page {
-  height: calc(100vh - 50px);
-}
-
 .text-color {
   background: linear-gradient(to right, rgb(145, 40, 145), rgb(4, 96, 255));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.text-footer {
+  text-align: left;
+  @media screen and (max-width: 600px) {
+    text-align: center;
+  }
 }
 
 .title-home {
