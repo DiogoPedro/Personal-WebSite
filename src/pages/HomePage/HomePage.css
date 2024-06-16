@@ -7,6 +7,24 @@
   background: linear-gradient(to bottom, #3f0b6e 50%, #242424 50%);
 }
 
+.carousel-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel-jeep-image {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  object-fit: contain;
+}
+
+.no-border {
+  border: none !important;
+}
+
 .card-size {
   margin-top: 15px;
   width: 21em;

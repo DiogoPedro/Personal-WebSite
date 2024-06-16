@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "VTB Solutions",
+    "date": "April 2023 - Present",
+    "description": "VTB Solutions is a consultancy firm specializing in low-code solutions, with a focus on developing and maintaining systems integrated with AI.",
+    "activities": [
+      "Developing new services and maintaining features using AspNet Core API/MVC, and managing data with MongoDB via the MongoDB Driver ORM.",
+      "Creating front-end services with React JS, using React Router Dom, Tailwind CSS, and Hooks.",
+      "Maintaining systems with Blazor WebAssembly, incorporating jQuery, and SignalR for messaging services.",
+      "Integrating various services with Azure cloud services, and using Azure DevOps for deployment and management.",
+      "Integrating OpenAI services into customers' existing systems for data analysis and providing suggestions through the creation of specialized agents, utilizing both OpenAI and Azure OpenAI platforms."
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Dokdex",
+    "date": "May 2022 - March 2023",
+    "description": "Dokdex is a startup providing innovative solutions tailored to the cryptocurrency market, seeking to develop solutions in this emerging sector.",
+    "activities": [
+      "Developing blockchain solutions using Solidity and Ethereum.",
+      "Creating secure and scalable APIs with Node.js and Express.",
+      "Implementing responsive front-end interfaces with React JS and Bootstrap.",
+      "Maintaining and updating cryptocurrency market analysis tools.",
+      "Collaborating with a team of developers to design and implement new features."
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Jeep",
+    "date": "June 2021 - April 2022",
+    "description": "Jeep is an iconic brand known for its rugged, versatile vehicles designed for off-road performance and adventure.",
+    "activities": [
+      "Developing marketing websites and landing pages with HTML, CSS, and JavaScript.",
+      "Implementing interactive features using React JS.",
+      "Ensuring cross-browser compatibility and optimizing web performance.",
+      "Collaborating with designers to create visually appealing and user-friendly interfaces.",
+      "Maintaining and updating the company's main website and its subdomains."
+    ]
+  }
+]

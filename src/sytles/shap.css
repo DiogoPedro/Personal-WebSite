@@ -1,13 +1,3 @@
-.carousel-image {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  object-fit: contain;
-}
-
-.carousel-control-next {
-}
-
 .hyphen {
   width: 15px;
   height: 5px;
