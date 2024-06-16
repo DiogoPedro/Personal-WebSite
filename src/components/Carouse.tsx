@@ -51,7 +51,7 @@ const CarouseComponents: React.FC = () => {
           <Carousel.Caption></Carousel.Caption>
           <p className="teste mt-3 pb-4 text-center text-light">
             A startup providing innovative solutions tailored to the cryptocurrency market, seeking to develop solutions
-            in this emerging sector.
+            sector.
           </p>
         </Carousel.Item>
         <Carousel.Item>
@@ -75,6 +75,7 @@ const CarouseComponents: React.FC = () => {
         show={modalShow}
         onHide={handleHide}
         title={modalData.title}
+        job={modalData.job}
         date={modalData.date}
         description={modalData.description}
         activities={modalData.activities}

@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "VTB Solutions",
+    "job": "Software Developer",
     "date": "April 2023 - Present",
     "description": "VTB Solutions is a consultancy firm specializing in low-code solutions, with a focus on developing and maintaining systems integrated with AI.",
     "activities": [
@@ -14,28 +15,25 @@
   },
   {
     "id": 2,
-    "title": "Dokdex",
-    "date": "May 2022 - March 2023",
-    "description": "Dokdex is a startup providing innovative solutions tailored to the cryptocurrency market, seeking to develop solutions in this emerging sector.",
+    "title": "Dokdex - solutions for the crypto environment",
+    "job": "Software Developer",
+    "date": "July 2022 - April 2023",
+    "description": "Dokdex is a promising startup specializing in cryptocurrency solutions, made up of former PhD students and professionals with experience at Microsoft. The main thing is to support this emerging market.",
     "activities": [
-      "Developing blockchain solutions using Solidity and Ethereum.",
-      "Creating secure and scalable APIs with Node.js and Express.",
+      "Using Blazor Server to create a new cryptocurrency trading platform. MudBlazor was employed as a user interface framework and configuring a gateway to provide a solution for blockchain validation.",
+      "I worked with SQL Server, using both Management Studio and Entity Framework Core to perform the mapping between our application and the database.",
       "Implementing responsive front-end interfaces with React JS and Bootstrap.",
-      "Maintaining and updating cryptocurrency market analysis tools.",
       "Collaborating with a team of developers to design and implement new features."
     ]
   },
   {
     "id": 3,
-    "title": "Jeep",
-    "date": "June 2021 - April 2022",
-    "description": "Jeep is an iconic brand known for its rugged, versatile vehicles designed for off-road performance and adventure.",
+    "title": "Jeep | Stellantis (Research & Development & Innovation)",
+    "job": "Research and extension project",
+    "date": "May 2022 - July 2022",
+    "description": "Jeep is a renowned vehicle brand, recognized for its robustness, innovation and adventure. Jeep is part of Stellantis, one of the largest automotive groups in the world.",
     "activities": [
-      "Developing marketing websites and landing pages with HTML, CSS, and JavaScript.",
-      "Implementing interactive features using React JS.",
-      "Ensuring cross-browser compatibility and optimizing web performance.",
-      "Collaborating with designers to create visually appealing and user-friendly interfaces.",
-      "Maintaining and updating the company's main website and its subdomains."
+      "Using Python language, we worked on capturing, processing and training images, seeking to use the most modern CNN models as YOLO."
     ]
   }
 ]

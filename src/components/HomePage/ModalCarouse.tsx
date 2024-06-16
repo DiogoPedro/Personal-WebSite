@@ -5,13 +5,14 @@ import Modal from "react-bootstrap/Modal";
 interface ModalCourseProps {
   show: boolean;
   title: string;
+  job: string;
   date: string;
   description: string;
   activities: string[];
   onHide: () => void;
 }
 
-const ModalCourse: React.FC<ModalCourseProps> = ({ show, title, date, description, activities, onHide }) => {
+const ModalCourse: React.FC<ModalCourseProps> = ({ show, title, job, date, description, activities, onHide }) => {
   return (
     <Modal show={show} onHide={onHide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
       <Modal.Header className="no-border" closeButton>
@@ -21,9 +22,9 @@ const ModalCourse: React.FC<ModalCourseProps> = ({ show, title, date, descriptio
       </Modal.Header>
       <Modal.Body>
         <div className="d-flex justify-content-between align-items-center">
-          <h4>Software Developer</h4>
+          <h4>{job}</h4>
           {date && (
-            <span>
+            <span style={{ fontSize: "14px" }}>
               <b>{date}</b>
             </span>
           )}
