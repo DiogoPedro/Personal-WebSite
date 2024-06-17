@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
 import Features from "../../components/HomePage/Features";
@@ -12,13 +12,11 @@ const HomePage: React.FC = () => {
   return (
     <>
       <Navbar />
-      <div className="home-page bg-secondary">
-        <Presentation />
-        <Features />
-        <Works />
-        <Publication />
-        <Footer />
-      </div>
+      <Presentation />
+      <Features />
+      <Works />
+      <Publication />
+      <Footer />
     </>
   );
 };

@@ -1,18 +1,14 @@
 // src/pages/ContactPage.tsx
 import React from "react";
-import Navbar from "../../components/Navbar/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Capabilities from "../../components/HomePage/Capabilities";
 
 const ContactPage: React.FC = () => {
   return (
-    <>
-      <Navbar />
-      <div className="container">
-        <h1>Contact Me</h1>
-        <p>This is the contact page content.</p>
-      </div>
-      <Footer />
-    </>
+    <div className="bg-secondary h-100 w-100">
+      {/* <Navbar /> */}
+      <Capabilities />
+      {/* <Footer /> */}
+    </div>
   );
 };
 

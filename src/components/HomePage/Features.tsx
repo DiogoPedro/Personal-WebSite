@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import DotnetSvg from "../../assets/net_svg.svg";
 
 const Features: React.FC = () => {
