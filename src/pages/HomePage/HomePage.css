@@ -11,8 +11,16 @@
   background-color: #e0e0e0;
 }
 
+.bg-features {
+  background-color: #6c757d;
+}
+
 .bg-footer {
   background-color: #242424;
+}
+
+.bg-capabilities {
+  background-color: #2f4f4f;
 }
 
 .carousel-image {
@@ -34,9 +42,21 @@
   transition: max-height 0.2s ease-out;
 }
 
-/* .card-text.expanded {
-  max-height: 1000px;
-} */
+.card-capabilities {
+  width: 260px;
+  height: 150px;
+  color: white;
+  border: white 1.5px solid;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  /* font-family: "Space Grotesk", Helvetica, Arial, sans-serif; */
+  /* font-size: 1.5rem; */
+}
+
+.card-capabilities h4 {
+  font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
+}
+
 .no-border {
   border: none !important;
 }
