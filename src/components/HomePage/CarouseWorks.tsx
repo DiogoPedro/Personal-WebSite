@@ -1,5 +1,6 @@
 import React from "react";
 import CarouseComponents from "../Carouse";
+import Capabilities from "./Capabilities";
 
 const PresentationWorks: React.FC = () => {
   return (
@@ -15,6 +16,10 @@ const PresentationWorks: React.FC = () => {
           </div>
           <div className="col-0 col-sm-0 col-md-3"></div>
         </div>
+        <p className="text-center text-light" style={{ fontSize: "1.5em", paddingBottom: "1em" }}>
+          A summary of my qualifications.
+        </p>
+        <Capabilities></Capabilities>
       </div>
     </div>
   );
