@@ -14,7 +14,7 @@ interface ModalCourseProps {
 
 const ModalCourse: React.FC<ModalCourseProps> = ({ show, title, job, date, description, activities, onHide }) => {
   return (
-    <Modal show={show} onHide={onHide} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+    <Modal show={show} onHide={onHide} size="lg" scrollable centered>
       <Modal.Header className="no-border" closeButton>
         <Modal.Title className="text-center w-100" id="contained-modal-title-vcenter">
           {title}
