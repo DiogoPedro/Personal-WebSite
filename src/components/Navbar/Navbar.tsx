@@ -1,9 +1,35 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
 import "./Navbar.css";
 
 const Navbar: React.FC = () => {
+  // Função para lidar com o clique em links da navegação
+  const handleNavLinkClick: EventListener = (event) => {
+    const target = event.target as HTMLAnchorElement;
+    const anchorId = target.getAttribute("href");
+    if (anchorId && anchorId.startsWith("#")) {
+      const targetElement = document.querySelector(anchorId);
+      if (targetElement) {
+        event.preventDefault();
+        targetElement.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+  };
+
+  useEffect(() => {
+    const navLinks = document.querySelectorAll(".navbar-nav a");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", handleNavLinkClick);
+    });
+
+    return () => {
+      navLinks.forEach((link) => {
+        link.removeEventListener("click", handleNavLinkClick);
+      });
+    };
+  }, []);
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
@@ -22,30 +48,30 @@ const Navbar: React.FC = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
               </Link>
-            </li>
+            </li> */}
             <li className="nav-item">
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/works">
+              <a className="nav-link" href="#works">
                 Works
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/publications">
+              <a className="nav-link" href="#publications">
                 Publications
-              </Link>
+              </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <a className="nav-link" href="#contact">
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

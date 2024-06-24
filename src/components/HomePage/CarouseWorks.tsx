@@ -5,7 +5,7 @@ import Capabilities from "./Capabilities";
 const PresentationWorks: React.FC = () => {
   return (
     <div className="bg-CarouseWorks">
-      <div className="trapezoid-third">
+      <div className="trapezoid-third" id="works">
         <h3 className="text-center text-light px-1" style={{ paddingBottom: "1.2em", paddingTop: "1.7em" }}>
           Organizations with Which I Have Collaborated.
         </h3>

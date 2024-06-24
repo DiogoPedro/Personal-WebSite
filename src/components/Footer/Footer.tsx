@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-footer footer">
+    <footer className="bg-footer footer" id="contact">
       <div className="row">
         <div className="col-12 col-md-6">
           <div className="d-flex justify-content-center align-items-center">

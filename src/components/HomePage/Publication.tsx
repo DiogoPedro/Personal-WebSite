@@ -21,7 +21,7 @@ const Publication: React.FC = () => {
   return (
     <>
       <div className="bg-publication">
-        <div className="trapezoid-quaternary">
+        <div className="trapezoid-quaternary" id="publications">
           <h3
             className="text-center text-light"
             style={{
