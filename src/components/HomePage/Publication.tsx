@@ -22,16 +22,16 @@ const Publication: React.FC = () => {
     <>
       <div className="bg-publication">
         <div className="trapezoid-quaternary" id="publications">
-          <h3
+          <h1
             className="text-center text-light"
             style={{
-              fontSize: "4.4em",
               paddingTop: "1.3em",
               position: "sticky",
               top: "25vh", // 50% of the viewport height
-            }}>
+            }}
+          >
             Publications created by me.
-          </h3>
+          </h1>
           <div>
             <div className="row">
               <div className="col-1"></div>
@@ -46,9 +46,15 @@ const Publication: React.FC = () => {
                       margin: "auto",
                     }}
                   />
-                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                  <Card.Body
+                    onClick={toggleExpanded}
+                    className="bg-card-iceWhite"
+                    style={{ cursor: "pointer" }}
+                  >
                     <Card.Title>CQRS</Card.Title>
-                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                    <Card.Text
+                      className={`card-text ${expanded ? "expanded" : ""}`}
+                    >
                       {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
@@ -70,9 +76,15 @@ const Publication: React.FC = () => {
                       margin: "auto",
                     }}
                   />
-                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                  <Card.Body
+                    onClick={toggleExpanded}
+                    className="bg-card-iceWhite"
+                    style={{ cursor: "pointer" }}
+                  >
                     <Card.Title>CQRS</Card.Title>
-                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                    <Card.Text
+                      className={`card-text ${expanded ? "expanded" : ""}`}
+                    >
                       {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
@@ -92,9 +104,15 @@ const Publication: React.FC = () => {
                       margin: "auto",
                     }}
                   />
-                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                  <Card.Body
+                    onClick={toggleExpanded}
+                    className="bg-card-iceWhite"
+                    style={{ cursor: "pointer" }}
+                  >
                     <Card.Title>CQRS</Card.Title>
-                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                    <Card.Text
+                      className={`card-text ${expanded ? "expanded" : ""}`}
+                    >
                       {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>
@@ -115,9 +133,15 @@ const Publication: React.FC = () => {
                       margin: "auto",
                     }}
                   />
-                  <Card.Body onClick={toggleExpanded} className="bg-card-iceWhite" style={{ cursor: "pointer" }}>
+                  <Card.Body
+                    onClick={toggleExpanded}
+                    className="bg-card-iceWhite"
+                    style={{ cursor: "pointer" }}
+                  >
                     <Card.Title>CQRS</Card.Title>
-                    <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
+                    <Card.Text
+                      className={`card-text ${expanded ? "expanded" : ""}`}
+                    >
                       {expanded ? fullText : truncateText(fullText, 150)}
                     </Card.Text>
                   </Card.Body>

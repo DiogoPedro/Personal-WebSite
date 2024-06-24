@@ -162,18 +162,18 @@
   margin-right: 20px;
 }
 
-#hex-1 {
+#azure-hex {
   width: 4.8em;
   height: 8.3em;
   transform: rotate(23deg);
-  background-color: #512cd4;
+  background-color: #242424;
   position: relative;
   top: 0.3em;
   left: -5em;
 
   @media screen and (max-width: 588px) {
-    top: 12px;
-    left: 30px;
+    top: 0.3em;
+    left: 0em;
   }
 
   @media screen and (min-width: 589px) and (max-width: 1182px) {
@@ -182,42 +182,52 @@
   }
 }
 
-#hex-background-1 {
-  position: relative;
-  margin: 1em auto;
+#azure-background {
   transform: rotate(-32deg);
-  width: 6em;
   height: 6.5em;
   z-index: 1;
+  top: 10px;
+  right: 16.5px;
 }
 
-#hex-2 {
-  @media screen and (max-width: 588px) {
-    top: 24px;
-    left: 12px;
-  }
-
-  width: 5.7em;
+#react-hex {
+  width: 5.5em;
   height: 9em;
   position: relative;
-  background-color: #512cd4;
+  background-color: #242424;
   top: 1.7em;
   left: 0.8em;
+
+  @media screen and (max-width: 588px) {
+    top: 2em;
+    left: 0em;
+  }
 }
 
-#hex-background-2 {
+#react-background {
   position: relative;
   margin: 1em auto;
-  width: 6.6em;
-  height: 6.6em;
+  width: 15em;
   z-index: 1;
+  top: 0px;
+  right: 15px;
+  animation: rotate 15s linear infinite;
 }
 
-#hex-3 {
-  width: 5em;
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#typescript-hex {
+  width: 4.7em;
   height: 8em;
   position: relative;
-  background-color: #512cd4;
+  background-color: #007acd;
   top: -7.5em;
   left: 11em;
 
@@ -232,12 +242,12 @@
   }
 }
 
-#hex-background-3 {
+#typescript-background {
   position: relative;
-  margin: 0.85em auto;
-  width: 6.6em;
-  height: 6.6em;
+  margin: 1em auto;
+  right: 13px;
   z-index: 1;
+  background: none;
 }
 
 #hex-4 {
@@ -245,7 +255,9 @@
   height: 7.5em;
   transform: rotate(20deg);
   position: relative;
-  background-color: #512cd4;
+  /* background-color: #326ce5; */
+  background-color: red;
+
   top: 4.3em;
   left: -3em;
 
@@ -256,11 +268,13 @@
 }
 
 #hex-background-4 {
-  position: relative;
-  margin: 1em auto;
+  /* position: relative;
+  margin: 1em auto; */
   transform: rotate(-29deg);
-  width: 4.2em;
-  height: 5.5em;
+  width: 7em;
+  height: 6.5em;
+  left: 0em;
+  top: 6em;
   z-index: 1;
 }
 
