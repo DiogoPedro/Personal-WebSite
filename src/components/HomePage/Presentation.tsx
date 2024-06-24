@@ -23,30 +23,32 @@ const Presentation: React.FC = () => {
 
   return (
     <>
-      <div className="trapezoid-primary">
-        <h3 className="title-home text-center">
-          I am a web developer passionate about{" "}
-          <span className="text-color">
-            technolog
-            <span id="position-y" ref={spanRef}>
-              y
+      <div className="bg-secondary">
+        <div className="trapezoid-primary">
+          <h3 className="title-home text-center">
+            I am a web developer passionate about{" "}
+            <span className="text-color">
+              technolog
+              <span id="position-y" ref={spanRef}>
+                y
+              </span>
+              .
             </span>
-            .
-          </span>
-        </h3>
-        <div
-          className="hyphen"
-          style={{
-            position: "absolute",
-            top: `${spanPosition.top + 5}px`,
-            left: `${spanPosition.left}px`,
-          }}></div>
-        <div className="mt-5">
-          <p className="title-content">Systems integration using artificial intelligence.</p>
-          <p className="title-content">Degree in Computer Engineering from the Federal University of Pernambuco.</p>
-        </div>
-        <div className="d-flex flex-row-reverse">
-          <img src={UfpeImg} height="60px" alt="UFPE" className="ufpe-img" />
+          </h3>
+          <div
+            className="hyphen"
+            style={{
+              position: "absolute",
+              top: `${spanPosition.top + 5}px`,
+              left: `${spanPosition.left}px`,
+            }}></div>
+          <div className="mt-5">
+            <p className="title-content">Systems integration using artificial intelligence.</p>
+            <p className="title-content">Degree in Computer Engineering from the Federal University of Pernambuco.</p>
+          </div>
+          <div className="d-flex flex-row-reverse">
+            <img src={UfpeImg} height="60px" alt="UFPE" className="ufpe-img" />
+          </div>
         </div>
       </div>
     </>
