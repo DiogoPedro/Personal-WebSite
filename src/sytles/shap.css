@@ -2,7 +2,8 @@
   width: 15px;
   height: 5px;
   background-color: #646cff;
-  position: absolute;
+  position: sticky;
+  z-index: 1;
   animation: blink 1s step-start infinite;
 }
 

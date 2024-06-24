@@ -3,5 +3,4 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/Personal-WebSite", // Substitua pelo nome do seu repositório
 });
