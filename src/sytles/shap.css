@@ -68,7 +68,7 @@
   @media screen and (max-width: 588px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     text-align: left;
-    height: 370px;
+    height: 415px;
   }
 
   height: 320px;
@@ -102,7 +102,7 @@
   @media screen and (max-width: 588px) {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 93%);
     text-align: left;
-    height: 665px;
+    height: 1600px;
   }
 }
 

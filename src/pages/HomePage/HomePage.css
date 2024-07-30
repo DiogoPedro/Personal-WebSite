@@ -27,6 +27,15 @@
   background-color: #2f4f4f;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+  margin-bottom: 105px;
+
+  @media screen and (max-width: 321px) {
+    margin-bottom: 135px;
+  }
+}
+
 .carousel-image {
   width: 100%;
   max-width: 350px;
@@ -100,17 +109,22 @@
   border-radius: 100%;
   background-color: white;
   position: relative;
-  top: -15em;
+  top: -16em;
   left: 1em;
 
   @media screen and (max-width: 588px) {
-    top: 1em;
-    left: 0.5em;
+    top: 2em;
+    left: 1em;
+  }
+
+  @media screen and (max-width: 426px) {
+    top: 0.3em;
+    left: 1em;
   }
 
   @media screen and (min-width: 589px) and (max-width: 1182px) {
-    top: -11em;
-    left: 2em;
+    top: -8em;
+    left: 1em;
   }
 }
 
@@ -251,12 +265,8 @@
 }
 
 #hex-4 {
-  width: 4.6em;
-  height: 7.5em;
   transform: rotate(20deg);
   position: relative;
-  /* background-color: #326ce5; */
-  background-color: red;
 
   top: 4.3em;
   left: -3em;
@@ -267,22 +277,40 @@
   }
 }
 
-#hex-background-4 {
-  /* position: relative;
-  margin: 1em auto; */
-  transform: rotate(-29deg);
-  width: 7em;
-  height: 6.5em;
-  left: 0em;
-  top: 6em;
+#kubernetes-hex {
+  width: 7.4em;
+  height: 7em;
   z-index: 1;
+
+  position: relative;
+  top: 4.3em;
+  left: -3em;
+
+  animation: rotateKubernetes 2.5s linear infinite;
+
+  @media screen and (max-width: 588px) {
+    top: 4em;
+    left: 7px;
+  }
 }
 
-#hex-5 {
-  width: 4.3em;
-  height: 7.2em;
+@keyframes rotateKubernetes {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#docker-hex {
+  width: 4.7em;
+  height: 7.5em;
   transform: rotate(28deg);
-  background-color: #512cd4;
+  background-color: black;
   position: relative;
   top: -6em;
 
@@ -296,21 +324,21 @@
   }
 }
 
-#hex-background-5 {
+#docker-background {
   position: relative;
-  margin: 1em auto;
-  transform: rotate(-32deg);
-  width: 6em;
-  height: 5.5em;
+  margin: 1.5em auto;
+  transform: rotate(-28deg);
+  width: 100%;
+  height: 4.2em;
   z-index: 1;
 }
 
-#hex-6 {
+#mongodb-hex {
   width: 5em;
   height: 8em;
   transform: rotate(28deg);
   position: relative;
-  background-color: #512cd4;
+  background-color: rgb(232, 232, 232);
   top: -16.5em;
   left: -11em;
 
@@ -325,16 +353,17 @@
   }
 }
 
-#hex-background-6 {
+#mongodb-hex-background {
   position: relative;
   margin: 1em auto;
-  transform: rotate(-32deg);
-  width: 6em;
-  height: 6.2em;
+  background-color: rgb(232, 232, 232);
+  transform: rotate(-28deg);
+  width: 100%;
+  height: 6em;
   z-index: 1;
 }
 
-#hex-7 {
+#dotnet-hex {
   width: 6em;
   height: 10em;
   transform: rotate(20deg);
@@ -354,7 +383,7 @@
   }
 }
 
-#hex-background-7 {
+#dotnet-hex-background {
   position: relative;
   margin: 1em auto;
   transform: rotate(-32deg);

@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 import DotnetSvg from "../../assets/net_svg.svg";
+import DockerSvg from "../../assets/docker2.svg";
+import MongoDbPng from "../../assets/mongodb4.png";
 import ReactSvg from "../../assets/React_Logo_SVG.svg";
 import TypeScriptX from "../../assets/typescript.png";
-import KubernetImg from "../../assets/Kubernetes.png";
+import { BsArrowsExpand } from "react-icons/bs";
 
 const Features: React.FC = () => {
   const spanWhiteRef = React.useRef<HTMLDivElement>(null);
@@ -73,9 +75,9 @@ const Features: React.FC = () => {
                 alt="React"
               />
             </div>
-            <div id="hex-4" className="hex d-flex">
+            <div className="hex d-flex">
               <div
-                id="hex-background-4"
+                id="kubernetes-hex"
                 style={{
                   backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg")`,
                   backgroundPosition: "center",
@@ -85,9 +87,31 @@ const Features: React.FC = () => {
             </div>
           </div>
           <div className="d-flex">
-            <div id="hex-5" className="hex d-flex">
+            <div id="docker-hex" className="hex d-flex">
               <div
-                id="hex-background-5"
+                id="docker-background"
+                style={{
+                  backgroundImage: `url(${DockerSvg})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              ></div>
+            </div>
+          </div>
+          <div className="d-flex">
+            <div id="mongodb-hex" className="hex d-flex">
+              <div
+                id="mongodb-hex-background"
+                style={{
+                  backgroundImage: `url(${MongoDbPng})`,
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                }}
+              ></div>
+            </div>
+            <div id="dotnet-hex" className="hex d-flex">
+              <div
+                id="dotnet-hex-background"
                 style={{
                   backgroundImage: `url(${DotnetSvg})`,
                   backgroundPosition: "center",
@@ -96,30 +120,8 @@ const Features: React.FC = () => {
               ></div>
             </div>
           </div>
-          <div className="d-flex">
-            <div id="hex-6" className="hex d-flex">
-              <div
-                id="hex-background-6"
-                style={{
-                  backgroundImage: `url(${DotnetSvg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              ></div>
-            </div>
-            <div id="hex-7" className="hex d-flex">
-              <div
-                id="hex-background-7"
-                style={{
-                  backgroundImage: `url(${DotnetSvg})`,
-                  backgroundPosition: "center",
-                  backgroundSize: "cover",
-                }}
-              ></div>
-            </div>
-            {/* <div className="expansion d-flex justify-content-center align-items-center">
+          <div className="expansion d-flex justify-content-center align-items-center">
             <BsArrowsExpand size={"2em"} />
-          </div> */}
           </div>
         </div>
       </div>
