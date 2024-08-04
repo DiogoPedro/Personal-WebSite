@@ -78,10 +78,6 @@
   font-family: "Space Grotesk", Helvetica, Arial, sans-serif;
 }
 
-.no-border {
-  border: none !important;
-}
-
 .card-size {
   margin-top: 15px;
   width: 21em;

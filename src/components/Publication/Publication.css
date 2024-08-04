@@ -1,0 +1,6 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Define quatro colunas iguais */
+  grid-template-rows: repeat(6, auto); /* Define linhas automáticas para os cards */
+  gap: 5px; /* Espaçamento entre os cards */
+}

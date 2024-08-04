@@ -4,9 +4,9 @@ import Footer from "../../components/Footer/Footer";
 import Features from "../../components/HomePage/Features";
 import Presentation from "../../components/HomePage/Presentation";
 import Works from "../../components/HomePage/CarouseWorks";
+import Publication from "../../components/HomePage/Publication";
 
 import "./HomePage.css";
-import Publication from "../../components/HomePage/Publication";
 
 const HomePage: React.FC = () => {
   return (
