@@ -1,6 +1,6 @@
 import React from "react";
 import logoWebSite from "../../assets/logo.png";
-import { FaLinkedin, FaInstagram, FaEnvelope, FaMobileAlt, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaEnvelope, FaMobileAlt, FaWhatsapp, FaFileExport } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const copyToClipboard = (text: string) => {
@@ -62,6 +62,18 @@ const Footer: React.FC = () => {
                     rel="noopener noreferrer"
                     className="text-light">
                     Diogo França
+                  </a>
+                </p>
+              </div>
+              <div className="d-flex align-items-center mt-2">
+                <FaFileExport size={18} className="mt-1" color="white" />
+                <p className="text-light mx-2 mb-0">
+                  <a
+                    href="../../../public/cv_diogo.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-light">
+                    My resume skills.
                   </a>
                 </p>
               </div>
