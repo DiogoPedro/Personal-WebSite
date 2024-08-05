@@ -5,6 +5,7 @@ import MongoDbPng from "../../assets/mongodb4.png";
 import ReactSvg from "../../assets/React_Logo_SVG.svg";
 import TypeScriptX from "../../assets/typescript.png";
 import { BsArrowsExpand } from "react-icons/bs";
+import ModalCV from "./ModalCV";
 
 const Features: React.FC = () => {
   const spanWhiteRef = React.useRef<HTMLDivElement>(null);
@@ -46,8 +47,7 @@ const Features: React.FC = () => {
               position: "absolute",
               top: `${spanWhitePosition.top + 5}px`,
               left: `${spanWhitePosition.left}px`,
-            }}
-          ></div>
+            }}></div>
           <div className="d-flex">
             <div id="azure-hex" className="hex d-flex">
               <img
@@ -58,22 +58,12 @@ const Features: React.FC = () => {
               />
             </div>
             <div id="react-hex" className="hex d-flex">
-              <img
-                className="position-relative"
-                id="react-background"
-                src={ReactSvg}
-                alt="React"
-              />
+              <img className="position-relative" id="react-background" src={ReactSvg} alt="React" />
             </div>
           </div>
           <div className="d-flex">
             <div id="typescript-hex" className="hex d-flex">
-              <img
-                className="position-relative hex"
-                id="typescript-background"
-                src={TypeScriptX}
-                alt="React"
-              />
+              <img className="position-relative hex" id="typescript-background" src={TypeScriptX} alt="React" />
             </div>
             <div className="hex d-flex">
               <div
@@ -82,8 +72,7 @@ const Features: React.FC = () => {
                   backgroundImage: `url("https://upload.wikimedia.org/wikipedia/commons/3/39/Kubernetes_logo_without_workmark.svg")`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                }}
-              ></div>
+                }}></div>
             </div>
           </div>
           <div className="d-flex">
@@ -94,8 +83,7 @@ const Features: React.FC = () => {
                   backgroundImage: `url(${DockerSvg})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                }}
-              ></div>
+                }}></div>
             </div>
           </div>
           <div className="d-flex">
@@ -106,8 +94,7 @@ const Features: React.FC = () => {
                   backgroundImage: `url(${MongoDbPng})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                }}
-              ></div>
+                }}></div>
             </div>
             <div id="dotnet-hex" className="hex d-flex">
               <div
@@ -116,13 +103,13 @@ const Features: React.FC = () => {
                   backgroundImage: `url(${DotnetSvg})`,
                   backgroundPosition: "center",
                   backgroundSize: "cover",
-                }}
-              ></div>
+                }}></div>
             </div>
           </div>
-          <div className="expansion d-flex justify-content-center align-items-center">
+          <ModalCV />
+          {/* <div className="expansion d-flex justify-content-center align-items-center">
             <BsArrowsExpand size={"2em"} />
-          </div>
+          </div> */}
         </div>
       </div>
     </>

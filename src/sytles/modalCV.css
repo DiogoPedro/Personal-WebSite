@@ -1,0 +1,35 @@
+.modal-cv .modal-content {
+  background-color: #3b3b3b;
+  color: white;
+}
+
+.modal-cv .modal-header,
+.modal-cv .modal-footer {
+  background-color: #3b3b3b;
+  height: 3.5em;
+  border: none;
+}
+
+.modal-cv .modal-header .btn-close {
+  color: white !important;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.cv-iframe {
+  width: 100%;
+  height: calc(100vh - 3.5em - 3em); /* Subtrai a altura do header e footer */
+  border: none;
+}
+
+/* Ajuste para garantir que o iframe preencha a tela em dispositivos móveis */
+@media (max-width: 768px) {
+  .cv-iframe {
+    height: calc(100vh - 3em - 3em); /* Ajusta a altura do iframe para telas menores */
+  }
+
+  .modal-cv .modal-header,
+  .modal-cv .modal-footer {
+    height: 2.5em; /* Ajusta a altura do header e footer para telas menores */
+  }
+}
