@@ -1,5 +1,5 @@
 import React from "react";
-import logoWebSite from "../../assets/logo.png";
+import logoWebSite from "../../assets/IconeFundoCinza.png";
 import { FaLinkedin, FaInstagram, FaEnvelope, FaMobileAlt, FaWhatsapp, FaFileExport } from "react-icons/fa";
 
 const Footer: React.FC = () => {
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-footer footer" id="contact">
       <div className="row">
-        <div className="col-12 col-md-6">
+        <div className="col-12 col-md-6 mt-4">
           <div className="d-flex justify-content-center align-items-center">
             <img src={logoWebSite} alt="Logo" style={{ width: "100px", height: "100px" }} />
           </div>
@@ -37,6 +37,18 @@ const Footer: React.FC = () => {
             </p>
             <div className="d-flex flex-column align-items-center align-items-md-start">
               <div className="d-flex align-items-center">
+                <FaLinkedin size={18} className="mt-1" color="white" />
+                <p className="text-light mx-2 mb-0">
+                  <a
+                    href="https://www.linkedin.com/in/diogo-dpfs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-light">
+                    Diogo França
+                  </a>
+                </p>
+              </div>
+              <div className="d-flex align-items-center mt-2">
                 <FaEnvelope size={18} className="mt-1" color="white" />
                 <p className="text-light mx-2 mb-0 word-break">
                   <a href="mailto:diogo_francadd5@hotmail.com" className="text-light">
@@ -51,18 +63,6 @@ const Footer: React.FC = () => {
                   style={{ cursor: "pointer" }}
                   onClick={() => copyToClipboard("+5581988356989")}>
                   +55 (81) 98835-6989
-                </p>
-              </div>
-              <div className="d-flex align-items-center mt-2">
-                <FaLinkedin size={18} className="mt-1" color="white" />
-                <p className="text-light mx-2 mb-0">
-                  <a
-                    href="https://www.linkedin.com/in/diogo-dpfs"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-light">
-                    Diogo França
-                  </a>
                 </p>
               </div>
               <div className="d-flex align-items-center mt-2">
