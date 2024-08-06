@@ -22,27 +22,39 @@ const DiagonalCards = () => {
   return (
     <div className="grid-container mx-2">
       {cards.map((card, index) => (
-        <div key={index} style={{ gridColumnStart: index + 1, gridRowStart: index + 1 }}>
-          <Card style={{ width: "100%", borderRadius: "10px" }}>
-            <Card.Img
-              src={UfpeImg}
-              style={{
-                width: "100%",
-                height: "180px",
-                objectFit: "contain",
-                margin: "auto",
-              }}
-            />
-            <Card.Body
-              onClick={toggleExpanded}
-              className="bg-card-iceWhite"
-              style={{ cursor: "pointer", borderBottomLeftRadius: "10px", borderBottomRightRadius: "10px" }}>
-              <Card.Title>CQRS</Card.Title>
-              <Card.Text className={`card-text ${expanded ? "expanded" : ""}`}>
-                {expanded ? fullText : truncateText(fullText, 150)}
-              </Card.Text>
-            </Card.Body>
-          </Card>
+        <div
+          key={index}
+          style={{ gridColumnStart: index + 1, gridRowStart: index + 1 }}
+        >
+          <div className="d-flex justify-content-center">
+            <Card style={{ width: "20em", borderRadius: "10px" }}>
+              <Card.Img
+                src={UfpeImg}
+                style={{
+                  width: "100%",
+                  height: "180px",
+                  objectFit: "contain",
+                  margin: "auto",
+                }}
+              />
+              <Card.Body
+                onClick={toggleExpanded}
+                className="bg-card-iceWhite"
+                style={{
+                  cursor: "pointer",
+                  borderBottomLeftRadius: "10px",
+                  borderBottomRightRadius: "10px",
+                }}
+              >
+                <Card.Title>CQRS</Card.Title>
+                <Card.Text
+                  className={`card-text ${expanded ? "expanded" : ""}`}
+                >
+                  {expanded ? fullText : truncateText(fullText, 150)}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </div>
         </div>
       ))}
     </div>
